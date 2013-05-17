@@ -55,7 +55,14 @@ p {
 a {
     color: $color-brand;
     text-decoration: none;
-    &:hover { color: darken($color-brand, 50%); }
+    &:hover,
+    &:focus {
+        color: darken($color-brand, 50%);
+    }
+    &:focus {
+        background: rgba($black, 0.1);
+        outline: 0;
+    }
 }
 
 small { font-size: 0.75rem; color: lighten($black, 50%); }
