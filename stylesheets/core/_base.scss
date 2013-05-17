@@ -18,6 +18,7 @@ html {
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
+
     @include media-tablet-portrait { font-size: 17px; }
     @include media-tablet { font-size: 18px; }
 }
@@ -28,8 +29,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
-    line-height: 2rem;
-    margin: 0 0 0.35rem 0;
+    line-height: 1.5em;
+    margin-bottom: 0.25em;
     &.soft {
         font-weight: 300;
         color: lighten($black, 50%);
@@ -37,15 +38,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 { font-size: 2.25rem; }
-h2 { font-size: 1.6rem; }
-h3 { font-size: 1.4rem; }
-h4 { font-size: 1.2rem; }
-h5 { font-size: 1.05rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1rem; }
 h6 { font-size: 1rem; }
 
 p {
     margin-bottom: $vertical-spacing;
-    &.lead { font-size: 1.2rem; }
+    &.lead {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
 }
 
 a {
@@ -54,7 +58,7 @@ a {
     &:hover { color: darken($color-brand, 50%); }
 }
 
-small { font-size: 0.85rem; color: lighten($black, 50%); }
+small { font-size: 0.75rem; color: lighten($black, 50%); }
 
 em { font-style: italic; }
 
@@ -70,7 +74,7 @@ mark { background-color: lighten(yellow, 35%); }
 
 hr {
     background-color: transparent;
-    border: solid lighten($black, 80%);
+    border: solid lighten($black, 75%);
     border-width: 1px 0 0;
     clear: both;
     margin: 2rem $vertical-spacing;
@@ -79,10 +83,10 @@ hr {
 blockquote {
     quotes: none;
     color: lighten($black, 50%);
-    font: italic 1.2rem Georgia, serif;
+    font: italic 1.25rem Georgia, serif;
     line-height: 2rem;
     margin-bottom: $vertical-spacing;
-    padding: 0 0 0 2rem;
+    padding-left: 2rem;
     position: relative;
     &:before {
         color: lighten($black, 75%);
@@ -96,7 +100,7 @@ blockquote {
     cite {
         color: lighten($black, 35%);
         display: block;
-        font-size: 0.85rem;
+        font-size: 0.75rem;
         &:before { content: "\2014 \0020"; }
     }
 }

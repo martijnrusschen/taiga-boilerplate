@@ -20,7 +20,7 @@ select {
     font-size: inherit;
     line-height: 1.5rem;
     margin: 0;
-    padding: 0.6rem;
+    padding: 0.5rem;
     width: 100% !important;
     @include border-radius($border-radius);
     @include box-shadow(inset 0px 1px 3px rgba($black, 0.1));
@@ -52,7 +52,7 @@ legend {
     margin-bottom: 0.25rem;
     font-weight: bold;
     line-height: 1.5rem;
-    font-size: 1.4rem;
+    font-size: 1.25rem;
 }
 
 ul.form {
@@ -67,7 +67,7 @@ ul.form {
         cursor: pointer;
         display: block;
         font-weight: bold;
-        padding-top: 0.6rem;
+        padding-top: 0.55rem;
         text-align: left;
 
         @include media-tablet-portrait {
@@ -99,7 +99,7 @@ ul.form-checklist {
     li { margin: 0.5rem 0; }
     input {
         display: inline;
-        margin-right: 0.8rem;
+        margin-right: 0.75rem;
     }
     label {
         @include grid-reset;
@@ -124,6 +124,6 @@ li.form-error {
     ul.form-errors {
         color: $color-alert;
         list-style: none;
-        margin: 0.35rem 0;
+        margin: 0.25rem 0;
     }
 }

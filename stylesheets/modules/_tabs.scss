@@ -4,7 +4,7 @@ ul.tabs {
     background: lighten($black, 80%);
     @include border-radius($border-radius);
     margin: 0 0 $vertical-spacing 0;
-    padding: 0.35rem 0.35rem 0 0.35rem;
+    padding: 0.25rem 0.25rem 0 0.25rem;
     li {
         display: inline-block;
         position: relative;
