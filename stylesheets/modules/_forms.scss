@@ -22,7 +22,7 @@ select {
     margin: 0;
     padding: 0.6rem;
     width: 100% !important;
-    @include border-radius(0.2rem);
+    @include border-radius($border-radius);
     @include box-shadow(inset 0px 1px 3px rgba($black, 0.1));
     @include transition(border 0.1s);
     vertical-align: baseline;

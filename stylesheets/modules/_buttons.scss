@@ -30,7 +30,7 @@ div.buttons {
     border: 0;
     vertical-align: baseline;
     text-decoration: none;
-    @include border-radius(0.2rem);
+    @include border-radius($border-radius);
 }
 
 .button,

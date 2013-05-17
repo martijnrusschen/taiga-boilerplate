@@ -3,7 +3,7 @@
 .panel {
     background: lighten($black, 85%);
     margin-bottom: $vertical-spacing;
-    @include border-radius(0.2rem);
+    @include border-radius($border-radius);
     padding: 1rem;
 }
 

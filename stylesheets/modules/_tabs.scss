@@ -2,7 +2,7 @@
 
 ul.tabs {
     background: lighten($black, 80%);
-    @include border-radius(0.2rem);
+    @include border-radius($border-radius);
     margin: 0 0 $vertical-spacing 0;
     padding: 0.35rem 0.35rem 0 0.35rem;
     li {
@@ -17,7 +17,7 @@ ul.tabs {
     }
     li.is-selected a {
         background: $white;
-        @include border-radius(0.2rem 0.2rem 0 0);
+        @include border-radius($border-radius $border-radius 0 0);
         color: $black;
         font-weight: bold;
     }

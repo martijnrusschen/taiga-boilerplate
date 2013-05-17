@@ -2,7 +2,7 @@
 
 
 %label {
-    @include border-radius(0.2rem);
+    @include border-radius($border-radius);
     font-size: 0.75rem;
     font-weight: bold;
     padding: 0.1rem 0.3rem;

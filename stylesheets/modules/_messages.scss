@@ -6,7 +6,7 @@ ul.messages  {
 }
 
 li%message {
-    @include border-radius(0.2rem);
+    @include border-radius($border-radius);
     font-weight: bold;
     margin-bottom: 0.25rem;
     display: block;
