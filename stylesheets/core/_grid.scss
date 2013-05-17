@@ -13,7 +13,7 @@
 
 */
 
-$max-width: ($max-width / $font-size) + em;
+$max-width: ($max-width / $font-size) + rem;
 $grid-column: 100% / $grid-columns;
 
 @mixin col($n: 1) { float: left; width: ($n * $grid-column); }
@@ -38,6 +38,13 @@ $grid-column: 100% / $grid-columns;
 /* The clearfix mixin is necessary for the floats */
 @mixin clearfix {
     *zoom: 1;
-    &:before, &:after { display: block; height: 0 !important; line-height: 0; overflow: hidden; visibility: hidden; content:"."; }
+    &:before, &:after {
+        display: block;
+        height: 0 !important;
+        line-height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        content:".";
+    }
     &:after { clear: both; }
 }

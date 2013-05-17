@@ -6,12 +6,12 @@ ul.messages  {
 }
 
 li%message {
-    @include border-radius(0.2em);
+    @include border-radius(0.2rem);
     font-weight: bold;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.25rem;
     display: block;
     vertical-align: baseline;
-    padding: 0.35em 0.75em 0.45em 0.75em;
+    padding: 0.35rem 0.75rem 0.45rem 0.75rem;
 }
 
 li.message {

@@ -15,6 +15,7 @@ div.buttons {
 
 // The standard button has the $color-brand colors
 %button {
+    -webkit-font-smoothing: antialiased;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -24,12 +25,12 @@ div.buttons {
     font-weight: bold;
     font-family: $font-family;
     line-height: 1.25;
-    margin: 0 0 0.25em 0;
-    padding: 0.35em 0.75em 0.45em 0.75em;
+    margin: 0 0 0.25rem 0;
+    padding: 0.35rem 0.75rem 0.45rem 0.75rem;
     border: 0;
     vertical-align: baseline;
     text-decoration: none;
-    @include border-radius(0.2em);
+    @include border-radius(0.2rem);
 }
 
 .button,
