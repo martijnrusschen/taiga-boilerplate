@@ -111,7 +111,7 @@ ul.form-checklist {
     }
 }
 
-li.form-error {
+ul li.form-error {
     label {
         color: $color-alert;
         &:hover { color: darken($color-alert, 25%); }
